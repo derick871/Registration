@@ -16,3 +16,11 @@ nav{
     text-decoration: none;
     background-color: chartreuse;
 }
+#nav-dropdown{
+    display: none;
+    color: rgb(red, green, blue);
+}
+#nav-acc:hover #nav-dropdown{
+    display: block;
+    color: hsl(hue, saturation, lightness);
+}
