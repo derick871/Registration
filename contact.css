@@ -1,0 +1,13 @@
+*{
+    margin: 5px;
+    font-family: serif;
+    font-weight: 400;
+}
+body{
+    background-color: aqua;
+    color: black;
+    padding: 3px;
+}
+span{
+    color: brown;
+}
