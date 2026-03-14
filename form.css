@@ -1,0 +1,18 @@
+*{
+    margin: 5px;
+    font-family: sans-serif;
+    padding: 5px;
+}
+body{
+    background: burlywood;
+    color: black;
+}
+span{
+    color: brown;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    background-color: chartreuse;
+}
