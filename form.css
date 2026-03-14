@@ -10,7 +10,7 @@ body{
 span{
     color: brown;
 }
-nav{
+nav ul li{
     display: flex;
     justify-content: space-evenly;
     text-decoration: none;
