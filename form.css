@@ -12,7 +12,7 @@ span{
 }
 nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     text-decoration: none;
     background-color: chartreuse;
 }
