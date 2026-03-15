@@ -10,11 +10,12 @@ body{
 span{
     color: brown;
 }
-nav ul li{
+nav ul li a{
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: space-between;
     text-decoration: none;
-    background-color: chartreuse;
+    align-items: center;
 }
 #nav-dropdown{
     display: none;
