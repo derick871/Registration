@@ -24,3 +24,17 @@ nav ul li{
     display: block;
     color: hsl(hue, saturation, lightness);
 }
+@keyframes myAnimation {
+    0% {
+        background-color: red;
+        transform: translateX(0px);
+    }
+    50% {
+        background-color: blue;
+        transform: translateX(100px);
+    }
+    100% {
+        background-color: yellow;
+        transform: translateX(200px);
+    }
+}
