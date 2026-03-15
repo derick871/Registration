@@ -4,13 +4,13 @@
     padding: 5px;
 }
 body{
-    background: black;
-    color:wheat;
+    background:white;
+    color:black;
 }
 span{
     color: brown;
 }
-nav ul li a{
+nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -25,17 +25,30 @@ nav ul li a{
     display: block;
     color: hsl(hue, saturation, lightness);
 }
-@keyframes myAnimation {
-    0% {
-        background-color: red;
-        transform: translateX(0px);
+images {
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgb(0,0,0.5);
     }
-    50% {
-        background-color: blue;
-        transform: translateX(100px);
+
+.myAnimation {
+        display: flex;
+        animation: slide 16s infinite;
     }
-    100% {
-        background-color: yellow;
-        transform: translateX(200px);
+    /* each image */
+     .each image {
+        object-fit: cover;
+      }
+      
+        /* Animation for images  */
+    @keyframes myAnimation {
+        0%   { transform: translateX(0); }
+        20%  { transform: translateX(0); }
+        25%  { transform: translateX(-100%); }
+        45%  { transform: translateX(-100%); }
+        50%  { transform: translateX(-200%); }
+        70%  { transform: translateX(-200%); }
+        75%  { transform: translateX(-300%); }
+        95%  { transform: translateX(-300%); }
+        100% { transform: translateX(0); }
     }
-}
