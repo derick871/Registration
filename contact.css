@@ -56,8 +56,11 @@ img {
 
 nav {
     background-color: #333;
+    justify-content: space-between;
     padding: 10px 20px;
     color: white;
+    width: 50%;
+    margin: 10px auto;
 }
 
 

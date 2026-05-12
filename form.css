@@ -87,9 +87,11 @@ button:hover {
     margin-top: 15px;
 }
 nav {
-    background-color: grey; 
+    background-color: grey;
+    justify-content: space-between; 
     padding: 10px 20px;
     color: white;
+    width: 50%;
 }
 
 nav ul {
