@@ -89,6 +89,7 @@ button:hover {
 nav {
     background-color: grey; 
     padding: 10px 20px;
+    color: white;
 }
 
 nav ul {
