@@ -1,46 +1,112 @@
-*{
-    margin: 5px;
-    font-family:Arial, Helvetica, sans-serif;
-    padding: 5px;
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    color: gray;
 }
-body{
-    background:white;
-    color:black;
+
+
+.container, #about .container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 30px;
 }
-span{
-    color: brown;
+
+h1 span, h2 span {
+    color: brown; 
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: 600;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+/* Button Styling */
+button {
+    background-color: grey;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+}
+
+button:hover {
+    background-color: blue;
+}
+
+/* About Section Extras */
+.services-list {
+    background: #f9f9f9;
+    padding: 20px 40px;
+    border-radius: 8px;
+    line-height: 1.8;
+}
+
+.highlight-box {
+    border-left: 5px solid brown;
+    padding: 10px 20px;
+    background: #fff5f5;
+    font-style: italic;
+}
+
+.image-gallery img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+nav {
+    background-color: grey; 
+    padding: 10px 20px;
+}
+
 nav ul {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    text-decoration:none;
-    align-items: center;
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    gap: 20px; 
 }
-.images {
-        overflow: hidden;
-        border-radius: 10px;
-        box-shadow: 0 4px 15px rgb(0,0,0.5);
-    }
 
-.myAnimation {
-        display: flex;
-        animation: slide 16s infinite;
-    }
-    /* each image */
-     .each image {
-        object-fit: cover;
-      }
+nav ul li a {
+    color: white; 
+    text-decoration: none; 
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
 
-        /* Animation for images  */
-    @keyframes myAnimation {
-        0%   { transform: translateX(0); }
-        20%  { transform: translateX(0); }
-        25%  { transform: translateX(-100%); }
-        45%  { transform: translateX(-100%); }
-        50%  { transform: translateX(-200%); }
-        70%  { transform: translateX(-200%); }
-        75%  { transform: translateX(-300%); }
-        95%  { transform: translateX(-300%); }
-        100% { transform: translateX(0); }
-    }
+
+nav ul li a:hover {
+    color: brown; 
+}
