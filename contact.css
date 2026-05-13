@@ -104,6 +104,7 @@ select:focus, textarea:focus {
 
 /* Submit Button */
 .btn-submit {
+    justify-items: center;
     width: 250px;
     background-color: #a52a2a;
     color: white;
@@ -117,7 +118,7 @@ select:focus, textarea:focus {
 }
 
 .btn-submit:hover {
-    background-color: #802020;
+    background-color: #333;
     transform: translateY(-2px);
 }
 
