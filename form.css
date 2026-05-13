@@ -42,25 +42,40 @@ input {
 }
 
 /* Button Styling */
+/* Button Styling */
 button {
-    background-color: grey;
+    background-color: #4a4a4a; /* Muted slate grey */
     border: none;
-    padding: 12px;
-    border-radius: 6px;
-    margin-top: 5px;
+    border-radius: 8px; /* Slightly rounder for a modern feel */
+    padding: 0; /* Remove padding here so the anchor can fill the space */
+    margin-top: 15px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle depth */
+    overflow: hidden; /* Ensures the hover effect stays within corners */
 }
 
 button a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 0.95rem;
     display: block;
+    padding: 12px 24px; /* Move padding here to make the whole area clickable */
+    letter-spacing: 0.5px;
 }
 
+/* Hover State */
 button:hover {
-    background-color: blue;
+    background-color: #2563eb; /* A more vibrant, professional blue */
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 6px 12px rgba(37, 99, 235, 0.2); /* Glow effect */
+}
+
+/* Active State (When clicked) */
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* About Section Extras */
