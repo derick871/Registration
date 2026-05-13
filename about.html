@@ -1,56 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About us</title>
-    <link rel="stylesheet" href="form.css">
-</head>
-<body>
-     <div id="about">
-    <div class="container"> 
-        <div class="header">
-            <nav>
-                <ul>
-                    <li><a href="index.html"></a>Home</li>
-                    <li><a href="contact.html"></a>Contact</li>
-                    <li><a href="about.html"></a>About</li>
-                </ul>
-            </nav>
-        </div>
-        
-        <div class="row">
-            <div class="about-col-1">
-            </div>
-            <div class="about-col-2">
-                <h2 class="sub-title"><span>About us</span></h2>
-                <div class="about-text">
-                    <p>I'm Derick Watako from Nairobi. On behalf of our web development team, I'm here to present what we offer.</p>
-                    <h3>Our Expertise</h3>
-                    <nav>
-                        <ol class="services-list">
-                            <li>Programming (JS, Python, C#)</li>
-                            <li>Frontend and Backend Development</li>
-                            <li>API Integration and Databases</li>
-                            <li>Debugging and Problem-Solving</li>
-                            <li>Web Frameworks & Maintenance</li>
-                        </ol>
-                    </nav>
-                    <p class="highlight-box">
-                        Graduate in 5 months (part-time) or 3 months (full-time). <br>
-                        Become a certified web developer or frontend engineer.
-                    </p>
-                </div>
-                
-                <div class="image-gallery">
-                    <img src="images/download.jpg" alt="preview">
-                </div>
 
-                <a href="https://zinduaschool.com" class="btn">Visit Zindua School</a>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About us</title>
+
+    <link rel="stylesheet" href="form.css">
+
+</head>
+
+<body>
+
+    <header class="main-nav">
+
+        <div class="nav-container">
+
+            <div class="logo">Zindua<span>School</span></div>
+
+            <nav>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                    <li><a href="about.html">About</a></li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+<div id="about">
+    <div class="container">
+        <header class="about-header">
+            <h2 class="sub-title"><span>About us</span></h2>
+            <p class="intro-text">I'm Derick Wanyama from Nairobi. On behalf of our web development team, I'm here to present what we offer.</p>
+        </header>
+
+
+        <div class="expertise-section">
+            <h3>Our Expertise</h3>
+            <!-- Card Grid -->
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">💻</div>
+                    <h4>Programming</h4>
+                    <p>Mastery in JS, Python, and C# to build robust logic.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🌐</div>
+                    <h4>Fullstack</h4>
+                    <p>Seamless Frontend and Backend development expertise.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🗄️</div>
+                    <h4>Databases</h4>
+                    <p>API Integration and secure database management.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🛠️</div>
+                    <h4>Maintenance</h4>
+                    <p>Debugging, problem-solving, and framework maintenance.</p>
+                </div>
             </div>
+        </div>
+
+        <div class="info-row">
+            <div class="highlight-box">
+                <p>Graduate in <strong>5 months</strong> (part-time) or <strong>3 months</strong> (full-time).</p>
+                <p>Become a certified web developer or frontend engineer.</p>
+            </div>
+        </div>
+
+        <div class="cta-group">
+            <a href="https://zinduaschool.com" class="btn primary">Visit Zindua School</a>
+            <a href="contact.html" class="btn secondary">Contact Us</a>
         </div>
     </div>
 </div>
-    
-</body>
-</html>
