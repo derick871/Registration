@@ -1,167 +1,116 @@
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f7f6;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px 20px;
-    color: gray;
+/* Layout Containers */
+#about {
+    padding: 80px 0;
+    color: #475569;
 }
 
-
-.container, #about .container {
-    background: #ffffff;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    max-width: 600px;
-    width: 100%;
-    margin-bottom: 30px;
+#about .container {
+    max-width: 1000px; /* Wider than the form container */
+    margin: 0 auto;
+    padding: 40px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
-h1 span, h2 span {
-    color: brown; 
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin: 10px 0 5px;
-    font-weight: 600;
-}
-
-input {
-    padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    margin-bottom: 10px;
-}
-
-/* Button Styling */
-/* Button Styling */
-button {
-    background-color: #4a4a4a; /* Muted slate grey */
-    border: none;
-    border-radius: 8px; /* Slightly rounder for a modern feel */
-    padding: 0; /* Remove padding here so the anchor can fill the space */
-    margin-top: 15px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle depth */
-    overflow: hidden; /* Ensures the hover effect stays within corners */
-}
-
-button a {
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.95rem;
-    display: block;
-    padding: 12px 24px; /* Move padding here to make the whole area clickable */
-    letter-spacing: 0.5px;
-}
-
-/* Hover State */
-button:hover {
-    background-color: #2563eb; /* A more vibrant, professional blue */
-    transform: translateY(-2px); /* Slight lift effect */
-    box-shadow: 0 6px 12px rgba(37, 99, 235, 0.2); /* Glow effect */
-}
-
-/* Active State (When clicked) */
-button:active {
-    transform: translateY(0);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* About Section Extras */
-.services-list {
-    background: #f9f9f9;
-    padding: 20px 40px;
-    border-radius: 8px;
-    line-height: 1.8;
-}
-
-.highlight-box {
-    border-left: 5px solid brown;
-    padding: 10px 20px;
-    background: #fff5f5;
-    font-style: italic;
-}
-
-.image-gallery img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-right: 10px;
-    margin-top: 15px;
-}
-/* Navigation Styles */
-nav.main-nav {
-    background-color: #333; /* Darker, more professional grey */
-    width: 100%;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    display: flex;
-    justify-content: center; /* Centers the inner container */
-    padding: 0;
-}
-
-.nav-container {
-    max-width: 1200px;
-    width: 100%;
+.row {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
-.logo {
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
-    letter-spacing: 1px;
+/* Columns */
+.about-col-1 {
+    flex-basis: 35%;
+    min-width: 250px;
 }
 
-.logo span {
-    color: brown; /* Matches your theme */
+.about-col-2 {
+    flex-basis: 60%;
+    min-width: 300px;
 }
 
-nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 30px; /* Increased spacing for a cleaner look */
+/* Typography & Titles */
+.sub-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 20px;
 }
 
-nav ul li a {
-    color: #e0e0e0;
-    text-decoration: none;
+.sub-title span {
+    color: #7c2d12; /* Brand Brown */
+    border-bottom: 3px solid #7c2d12;
+}
+
+h3 {
+    margin: 25px 0 10px;
+    color: #1e293b;
+    font-size: 1.3rem;
+}
+
+/* Services List (Expertise) */
+.services-list {
+    background: #f8fafc;
+    padding: 20px 20px 20px 40px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    border: 1px solid #e2e8f0;
+}
+
+.services-list li {
+    margin-bottom: 10px;
     font-weight: 500;
-    font-size: 0.95rem;
-    text-transform: uppercase; /* Modern feel */
+    color: #334155;
+}
+
+/* Highlight Box */
+.highlight-box {
+    border-left: 5px solid #7c2d12;
+    padding: 15px 20px;
+    background: #fff5f5;
+    font-style: italic;
+    color: #7c2d12;
+    border-radius: 0 8px 8px 0;
+    margin: 20px 0;
+}
+
+/* Gallery & Images */
+.image-gallery img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* About Page Specific Button */
+.btn {
+    display: inline-block;
+    background: #1e293b;
+    color: #fff;
+    padding: 12px 28px;
+    margin-top: 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
     transition: all 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: brown;
+.btn:hover {
+    background: #7c2d12;
+    transform: translateY(-2px);
 }
 
-/* Responsive adjustment */
-@media (max-width: 600px) {
-    .nav-container {
-        flex-direction: column;
-        gap: 15px;
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%;
     }
 }
-
-
-
