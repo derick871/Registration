@@ -1,4 +1,3 @@
-/* Global Reset & Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -111,12 +110,16 @@ input:focus {
     border: none;
     border-radius: 8px;
     font-size: 1rem;
+    color: #fff5f2;
     font-weight: 600;
     cursor: pointer;
     transition: background 0.3s ease;
 }
 
-.submit-btn:hover { background: #1e293b; }
+.submit-btn:hover {
+     background: #1e293b;
+     color: #ffffff; 
+    }
 
 /* Reuse your About styles here for #about... */
 /* Container & Header Refinement */
