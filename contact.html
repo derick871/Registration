@@ -3,64 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Contact | Zindua Career</title>
     <link rel="stylesheet" href="contact.css">
 </head>
 <body>
-    <div class="header">
+
+    <header>
         <nav>
             <ul>
-               <li><a href="index.html"></a>Home</li>
-               <li><a href="contact.html"></a>Contact</li>
-               <li><a href="about.html"></a>About</li>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="contact.html">Contact</a></li>
+               <li><a href="about.html">About</a></li>
             </ul>
         </nav>
-    </div>
+    </header>
     
-    <div id="contact">
+    <main id="contact">
         <div class="container">
-        <div class="row">
-            <h1 class="sub-title">contact us</h1>
-            <p>
-                We get it—investing in your future can be daunting. <br>
-                 That’s why we offer flexible financing options. <br> 
-                 With our lipa mdogo mdogo plan, you can pay fees <br> 
-                 gradually over a longer time period. With our <br> 
-                 income-share, you pay 50% of fees and the rest once <br> 
-                 you are earning.
-            </p>
-            <img src="images\dero.jpg" alt="desktop"width=130px height="100px">
-        </div>
-        </div>
-    </div>
-    
-    
-        <p><span>Ready to Zindua your career in tech?</span> Enroll now,<br> 
-            learn to code, and become a pro in Software, Data, or our specialised pathways!
-        </p>
-        <form action="submition">
-            <label for="country">Country</label>
-            <select>
-                <option value="Kenya"></option>
-                <option value="Kenya">Kenya</option>
-                <option value="America">America</option>
-                <option value="Tanzania">Tanzania</option>
-                <option value="Uganda">Uganda</option>
-                <option value="Ethiopia">Ethiopia</option>
-                <option value="Nigeria">Nigeria</option>
-                <option value="Russia">Russia</option>
-                <option value="Iran">Iran</option>
-            </select><br>
-            <textarea name="message" id="message" rows="8" placeholder="your message"></textarea><br>
-         <button><a href="apply now">Apply Now</a></button>
-        </form>
-    <footer>
-        <div>
-        <p>copy Right Derick.made by easy Tutorial</p>
-        </div>
-        <a href="mailto:wanyamaderrick4@gmail.com">wanyamaderrick4@gmail.com</a> <br>
-        <a href="Tel:+254745668544">0745668544</a>
+            <div class="intro-section">
+                <h1 class="sub-title">Contact Us</h1>
+                <p>
+                    We get it—investing in your future can be daunting. 
+                    That’s why we offer <strong>flexible financing options</strong>. 
+                    With our <em>Lipa Mdogo Mdogo</em> plan, you can pay fees gradually, 
+                    or choose our income-share agreement where you pay 50% now and the rest once you're earning.
+                </p>
+                <img src="images/dero.jpg" alt="Office Desktop" class="promo-img">
+            </div>
 
+            <div class="form-section">
+                <p class="cta-text">
+                    <span>Ready to Zindua your career in tech?</span> Enroll now, learn to code, and become a pro!
+                </p>
+                
+                <form action="#" method="POST">
+                    <label for="country">Country of Residence</label>
+                    <select id="country" name="country" required>
+                        <option value="" disabled selected>Select your country</option>
+                        <option value="Kenya">Kenya</option>
+                        <option value="America">America</option>
+                        <option value="Tanzania">Tanzania</option>
+                        <option value="Uganda">Uganda</option>
+                        <option value="Ethiopia">Ethiopia</option>
+                        <option value="Nigeria">Nigeria</option>
+                    </select>
+
+                    <label for="message">How can we help you?</label>
+                    <textarea name="message" id="message" rows="5" placeholder="Tell us about your career goals..."></textarea>
+                    
+                    <button type="submit" class="btn-submit">Apply Now</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Derick. Made with &hearts; by Easy Tutorial</p>
+            <div class="contact-links">
+                <a href="mailto:wanyamaderrick4@gmail.com">wanyamaderrick4@gmail.com</a>
+                <span class="sep">|</span>
+                <a href="tel:+254745668544">0745668544</a>
+            </div>
+        </div>
     </footer>
     
 </body>

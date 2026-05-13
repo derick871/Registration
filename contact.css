@@ -1,85 +1,146 @@
+/* General Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f2f5;
-    padding: 50px 20px;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
     line-height: 1.6;
 }
 
-/* Contact Card */
-#contact .container, form {
-    background: white;
-    max-width: 500px;
-    margin: 0 auto 20px auto;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-}
-
-.sub-title {
-    text-transform: capitalize;
-    color: #1a1a1a;
-    border-bottom: 2px solid brown;
-    display: inline-block;
-    margin-bottom: 15px;
-}
-
-/* Input Fields */
-select, textarea {
-    width: 100%;
-    padding: 12px;
-    margin-top: 8px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-sizing: border-box; /* Ensures padding doesn't break width */
-}
-
-/* Footer Styling */
-footer {
-    text-align: center;
-    margin-top: 40px;
-    font-size: 0.9em;
-    color: #666;
-}
-
-footer a {
-    color: blue;
-    text-decoration: none;
-}
-
-img {
-    display: block;
-    margin: 20px 0;
-    border-radius: 10px;
-}
-
-
+/* Navigation */
 nav {
-    background-color: #333;
-    justify-content: space-between;
-    padding: 10px 20px;
-    color: white;
-    width: 50%;
-    margin: 10px auto;
+    background-color: #2d3436;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
 }
-
 
 nav ul {
     display: flex;
-    list-style-type: none; 
-    margin: 0;
-    padding: 0;
-    gap: 20px; 
+    list-style: none;
+    gap: 30px;
 }
 
-
 nav ul li a {
-    color: white;
-    text-decoration: none; 
-    font-weight: 500;
-    transition: color 0.3s ease;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: brown; 
+    color: #a52a2a; /* Brown accent */
+}
+
+/* Container */
+.container {
+    max-width: 650px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.sub-title {
+    font-size: 2rem;
+    color: #2d3436;
+    margin-bottom: 1rem;
+    border-left: 5px solid #a52a2a;
+    padding-left: 15px;
+}
+
+.promo-img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 8px;
+    border: 3px solid #f4f7f6;
+}
+
+/* Form Styles */
+.cta-text {
+    margin: 25px 0;
+    font-weight: 500;
+}
+
+.cta-text span {
+    display: block;
+    font-size: 1.2rem;
+    color: #a52a2a;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #eee;
+    border-radius: 6px;
+    font-family: inherit;
+    transition: border-color 0.3s;
+}
+
+select:focus, textarea:focus {
+    outline: none;
+    border-color: #a52a2a;
+}
+
+/* Submit Button */
+.btn-submit {
+    width: 250px;
+    background-color: #a52a2a;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-submit:hover {
+    background-color: #802020;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background: #2d3436;
+    color: #bdc3c7;
+    margin-top: 50px;
+}
+
+.contact-links {
+    margin-top: 10px;
+}
+
+.contact-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.sep {
+    margin: 0 10px;
+    color: #666;
 }
