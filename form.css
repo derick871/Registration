@@ -192,7 +192,7 @@ input:focus {
 }
 
 .btn.primary {
-    background: #7c2d12;
+    background: #475569;
     color: white;
 }
 
@@ -206,10 +206,9 @@ input:focus {
     transform: scale(1.05);
 }
 
-/* Highlight Box Refinement */
 .highlight-box {
     background: #fff5f2;
-    border-left: 5px solid #7c2d12;
+    border-left: 5px solid #334155;
     padding: 25px;
     border-radius: 0 12px 12px 0;
     text-align: center;
